@@ -6,11 +6,6 @@ def prime_generator(n):
         else:
             yield i
 
-
-# for prime in prime_generator(15):
-#     print(prime)
-
-
 class CycleIterator:
     def __init__(self, iterable):
         self.iterable = iterable
@@ -25,9 +20,3 @@ class CycleIterator:
         result = self.iterable[self.index]
         self.index += 1
         return result
-
-
-# it = CycleIterator([1, 2, 3])
-# for _ in range(7):
-#     print(next(it))
-
